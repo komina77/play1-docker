@@ -1,0 +1,11 @@
+services:
+  play-sample:
+    image:
+      komina77/play:1.7.1-bullseye
+    tty: true
+    volumes:
+      - ./work:/work
+    working_dir: /work
+    ports:
+      - 9000:9000
+
