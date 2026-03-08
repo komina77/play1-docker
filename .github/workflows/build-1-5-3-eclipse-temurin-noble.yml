@@ -30,7 +30,7 @@ jobs:
       - name: Build and push 1.5.3-eclipse-temurin-noble
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: 1.5.3
           file: 1.5.3/eclipse-temurin-noble/Dockerfile
           push: true
           tags: |
