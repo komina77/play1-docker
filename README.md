@@ -3,13 +3,13 @@ play1をdockerイメージ化。
 
 ## 一覧
 
-|Tag|BASE|
-|--|--|
-|komina77/play-1.5.3-bullseye|openjdk:11-jdk-slim-bullseye|
-|komina77/play-1.5.3-noble|eclipse-temurin:11-jdk-noble|
-|komina77/play-1.7.1|openjdk:17-jdk-slim-bullseye|
-|komina77/play-1.8.0|openjdk:19-jdk-slim-bullseye|
-|komina77/play-1.9.0|openjdk:19-jdk-slim-bullseye|
+|Tag|BASE||
+|--|--|--|
+|komina77/play-1.5.3-bullseye|openjdk:11-jdk-slim-bullseye|ベース消失のためワークフローから削除.|
+|komina77/play-1.5.3-noble|eclipse-temurin:11-jdk-noble||
+|komina77/play-1.7.1|openjdk:17-jdk-slim-bullseye||
+|komina77/play-1.8.0|openjdk:19-jdk-slim-bullseye||
+|komina77/play-1.9.0|openjdk:19-jdk-slim-bullseye||
 
 ## 使い方
 
