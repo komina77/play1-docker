@@ -1,11 +1,12 @@
 # play1-docker
-play1をdockerイメージ化
+play1をdockerイメージ化。
 
 ## 一覧
 
 |Tag|BASE|
 |--|--|
-|komina77/play-1.5.3|openjdk:11-jdk-slim-bullseye|
+|komina77/play-1.5.3-bullseye|openjdk:11-jdk-slim-bullseye|
+|komina77/play-1.5.3-noble|eclipse-temurin:11-jdk-noble|
 |komina77/play-1.7.1|openjdk:17-jdk-slim-bullseye|
 |komina77/play-1.8.0|openjdk:19-jdk-slim-bullseye|
 |komina77/play-1.9.0|openjdk:19-jdk-slim-bullseye|
@@ -33,7 +34,7 @@ PS C:\Users\komina77> docker run --rm -v ${pwd}/work:/work -w /work -p 9000:9000
 PS C:\Users\komina77> 
 ```
 
-引数なしで実行するとコンテナ起動後シェルで操作ができる。
+`-it`オプション + コマンド指定なし で実行するとコンテナ起動後シェルで操作ができる。
 ```
 PS C:\Users\komina77> docker run -it --rm -v ${pwd}/work:/work -w /work -p 9000:9000 komina77/play:1.7.1-bullseye
 # 
@@ -45,6 +46,10 @@ PS C:\Users\komina77> docker run -it --rm -v ${pwd}/work:/work -w /work -p 9000:
 ```
 PS play1-docker> docker build .\1.5.3\bullseye\. -t komina77/play:1.5.3-bullseye
 PS play1-docker> docker push komina77/play:1.5.3-bullseye
+```
+```
+PS play1-docker> docker build .\1.5.3 -f 1.5.3/eclipse-temurin-noble/Dockerfile -t komina77/play:1.5.3-noble
+PS play1-docker> docker push komina77/play:1.5.3-noble
 ```
 
 #### 1.7.1
