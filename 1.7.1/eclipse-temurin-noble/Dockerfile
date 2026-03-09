@@ -44,7 +44,7 @@ RUN unzip play-1.7.1.zip && \
     chmod +x /usr/local/play-1.7.1/play
 
 # ===== Stage 2: Temurin Noble Runtime =====
-FROM eclipse-temurin:11-jdk-noble
+FROM eclipse-temurin:17-jdk-noble
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PLAY_VERSION=1.7.1
