@@ -9,6 +9,7 @@ on:
 
 env:
   IMAGE_NAME: komina77/play
+  CACHE_TAG_1_7_1_NOBLE: 1.7.1-noble-buildcache
 
 jobs:
   build-and-push:
@@ -35,5 +36,5 @@ jobs:
           push: true
           tags: |
             ${{ env.IMAGE_NAME }}:1.7.1-noble
-          cache-from: type=registry,ref=komina77/play:1.7.1-noble
-          cache-to: type=registry,ref=komina77/play:1.7.1-noble,mode=max
+          cache-from: type=registry,ref=${{ env.IMAGE_NAME }}:${{ env.CACHE_TAG_1_7_1_NOBLE }}
+          cache-to: type=registry,ref=${{ env.IMAGE_NAME }}:${{ env.CACHE_TAG_1_7_1_NOBLE }},mode=max
