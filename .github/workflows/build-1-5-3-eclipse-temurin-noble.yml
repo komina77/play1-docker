@@ -35,5 +35,5 @@ jobs:
           push: true
           tags: |
             ${{ env.IMAGE_NAME }}:1.5.3-noble
-          cache-from: type=registry,ref=komina77/play:1.5.3-noble
-          cache-to: type=registry,ref=komina77/play:1.5.3-noble,mode=max
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
