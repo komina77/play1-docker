@@ -6,6 +6,7 @@ on:
     paths:
       - '1.7.1/eclipse-temurin-noble/**'
       - '.github/workflows/build-1-7-1-eclipse-temurin-noble.yml'
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: komina77/play

@@ -11,7 +11,7 @@
 
 ### プリコンパイルする
 ```
-PS C:\Users\komina77\play1-docker\1.5.3> docker run -it --rm -v ${pwd}/sample:/work -w /work -p 9000:9000 komina77/play:1.5.3-bullseye
+PS C:\Users\komina77\play1-docker\1.5.3> docker run -it --rm -v ${pwd}/sample:/work -w /work -p 9000:9000 komina77/play:1.5.3-noble
 # play deps myapp
 # play precompile myapp
 ~        _            _ 
@@ -40,7 +40,7 @@ WARNING: All illegal access operations will be denied in a future release
 ### 製品モードで実行
 play1では実行時に通常自動でコンパイルが走りますが `-Drecompiled=true` でそれをスキップしています。
 ```
-PS C:\Users\komin\VSCodeProjects\play1-docker\1.5.3> docker run --rm -v ${pwd}/sample:/work -w /work -p 9000:9000 komina77/play:1.5.3-bullseye play run myapp --%prod -Dprecompiled=true
+PS C:\Users\komin\VSCodeProjects\play1-docker\1.5.3> docker run --rm -v ${pwd}/sample:/work -w /work -p 9000:9000 komina77/play:1.5.3-noble play run myapp --%prod -Dprecompiled=true
 ~        _            _ 
 ~  _ __ | | __ _ _  _| |
 ~ | '_ \| |/ _' | || |_|

@@ -1,7 +1,7 @@
 services:
   play-sample:
     image:
-      komina77/play:1.7.1-bullseye
+      komina77/play:1.7.1-noble
     tty: true
     volumes:
       - ./work:/work
