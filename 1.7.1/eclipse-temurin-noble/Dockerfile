@@ -49,6 +49,7 @@ RUN unzip /tmp/play-1.7.1.zip && \
 FROM eclipse-temurin:17-jdk-noble
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV PLAY_VERSION=1.7.1
 ENV PLAY_HOME=/usr/local/play-${PLAY_VERSION}/
 
 # Python 3.7 と pip をコピー

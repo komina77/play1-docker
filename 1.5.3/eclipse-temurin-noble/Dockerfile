@@ -46,6 +46,7 @@ RUN unzip /tmp/play-1.5.3.zip && \
 FROM eclipse-temurin:11-jdk-noble
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV PLAY_VERSION=1.5.3
 
 # Python 2.7 をコピー
 COPY --from=builder /usr/local/bin/python2.7 /usr/local/bin/python2.7
